@@ -48,6 +48,10 @@ const routes = [
                 path: 'category',
                 name: 'category',
                 component: () => import('../views/category/index.vue')
+            },{
+                path: 'afterSale',
+                name: 'afterSale',
+                component: () => import('../views/aftersale/index.vue')
             }
         ]
     }

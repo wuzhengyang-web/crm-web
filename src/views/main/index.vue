@@ -10,6 +10,7 @@
           <!--     default-active   默认高亮的内容 对应的是index的取值 一般情况下 取值的是 el-menu-item
                   的 index的取值 -->
           <el-menu
+              router
               default-active="1"
               class="el-menu-vertical-demo"
           >
@@ -24,11 +25,11 @@
                 <i class="el-icon-location"></i>
                 <span>商品相关</span>
               </template>
-              <el-menu-item index="2-1">
+              <el-menu-item index="brand">
                 <i class="el-icon-menu"></i>
                 <span slot="title">品牌管理</span>
               </el-menu-item>
-              <el-menu-item index="2-2">
+              <el-menu-item index="category" >
                 <i class="el-icon-menu"></i>
                 <span slot="title">分类管理</span>
               </el-menu-item>
@@ -37,10 +38,20 @@
                 <span slot="title">商品管理</span>
               </el-menu-item>
             </el-submenu>
-            <el-menu-item index="3">
+            <el-menu-item index="supplier">
               <i class="el-icon-menu"></i>
               <span slot="title">运营商管理</span>
             </el-menu-item>
+            <el-submenu index="4">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>售后相关</span>
+              </template>
+              <el-menu-item index="afterSale">
+                <i class="el-icon-menu"></i>
+                <span slot="title">退换货出库管理</span>
+              </el-menu-item>
+            </el-submenu>
           </el-menu>
         </el-scrollbar>
 
